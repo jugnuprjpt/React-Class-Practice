@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function PractOne() {
+function IncrementDecremet() {
     const [add,setAdd] = useState(0)
     const [name,setName] = useState("arjun")
     const [param,setParam] = useState()
@@ -40,4 +40,4 @@ function PractOne() {
   )
 }
 
-export default PractOne
+export default IncrementDecremet

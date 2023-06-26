@@ -17,32 +17,34 @@ function AddToCartBox() {
 
     const handleAdd=(data)=>{
         console.log(data)
-        setAddCard(prev=>[...prev,data])
+        setAddCard((prev) => [...prev, data]);
     }
     
 
   return (
  <>
- {addCard}
+
       <div style={{ display: "flex" }}>
         <div>
-          {cardData.map((item) => (
+          {cardData.map((item) => {
+          return (
             <div key={item.id}>
               <h1>{item.product}</h1>
               <p>{item.price}</p>
               <button onClick={(e)=>handleAdd(item)}>Add to Cart</button>
             </div>
-          ))}
+          )})}
         </div>
       </div>
 
     <div>
-    {addCard.map((iteam) => (
+    {addCard.map((iteam) => {
+    return (
             <div key={iteam.id}>
               <h1>{iteam.product}</h1>
               <p>{iteam.price}</p>
             </div>
-          ))}
+          ) })}
        </div>
       </>
   );

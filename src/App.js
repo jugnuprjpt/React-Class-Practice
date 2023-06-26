@@ -1,16 +1,16 @@
 import './App.css';
-import AddToCartBox from './Pract-1-UseState/AddToCartBox';
-import PracThree from './Pract-1-UseState/PracThree';
-// import PractOne from './Pract-1-UseState/PractOne';
-// import PracTwo from './Pract-1-UseState/PracTwo';
+import InputMulti from './Pract-1-UseState/InputMulti';
+import PureCurd from './Pract-1-UseState/PureCurd';
+
+import SimpleCrudCardType from './Pract-1-UseState/SimpleCrudCardType';
+
 
 function App() {
   return (
     <div className="App">
-         {/* <PractOne/> */}
-         {/* <PracTwo/> */}
-         {/* <PracThree/> */}
-         <AddToCartBox/>
+         {/* <SimpleCrudCardType/> */}
+         {/* <InputMulti/> */}
+         <PureCurd />
     </div>
   );
 }
